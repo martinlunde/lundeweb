@@ -1,0 +1,40 @@
+/* Navbar CSS */
+
+.NavbarContainer {
+    background-color: #6e6e6e;
+    height: 50px;
+    z-index: 10;
+    display: flex;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+.name-link {
+    padding-left: 20px;
+    font-family: 'Rochester', cursive;
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+}
+
+.navButtons {
+    flex: 1 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.LinkButton {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.LinkButton:hover {
+    background-color: #898989;
+}
