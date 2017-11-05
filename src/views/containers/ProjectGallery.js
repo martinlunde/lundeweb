@@ -6,11 +6,11 @@ import React from 'react';
 import ProjectDisplayBox from '../components/ProjectGallery/ProjectDisplayBox';
 import '../../assets/styles/projectGallery.css';
 
-function ProjectGallery(props) {
+const ProjectGallery = (props) => {
 
-    var displayBoxes = [];
-    var x = 0;
-    for(var i = props.projects.length; i > 0; i--){
+    let displayBoxes = [];
+    let x = 0;
+    for(let i = props.projects.length; i > 0; i--){
         displayBoxes.push(<ProjectDisplayBox key={x}
                                              title={props.projects[x].title}
                                              link={props.projects[x].link}
@@ -23,6 +23,6 @@ function ProjectGallery(props) {
             { displayBoxes }
         </div>
     )
-}
+};
 
 export default ProjectGallery;

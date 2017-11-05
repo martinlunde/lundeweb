@@ -4,12 +4,12 @@
 import React from 'react';
 
 /* Description Section */
-function ProjectDescription() {
+const ProjectDescription = () => {
     return(
         <div className="DescriptionContainer">
 
         </div>
     );
-}
+};
 
 export default ProjectDescription;

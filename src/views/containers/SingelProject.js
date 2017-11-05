@@ -25,12 +25,12 @@ Every -- means a new section
 
  */
 
-function SingelProject(props) {
-    var project_id = window.location.href;
+const SingelProject = (props) => {
+    let project_id = window.location.href;
     project_id = project_id.split("/projects/")[1];
 
     /* TODO Get the right project to access attributes */
-    var project = props.projects[project_id];
+    let project = props.projects[project_id];
 
     return(
         <div className="SingelProjectContainer">
@@ -40,6 +40,6 @@ function SingelProject(props) {
             <ProjectDescription/>
         </div>
     );
-}
+};
 
 export default SingelProject;

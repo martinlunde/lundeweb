@@ -5,7 +5,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Big L for my last name, meant to be used on frontpage.
-function CenteredHexagon () {
+const CenteredHexagon = () => {
     return(
         <li className="hex hex_l">
             <div className="hexIn">
@@ -15,6 +15,6 @@ function CenteredHexagon () {
             </div>
         </li>
     );
-}
+};
 
 export default CenteredHexagon;

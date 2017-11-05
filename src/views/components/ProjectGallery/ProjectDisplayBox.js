@@ -4,7 +4,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function ProjectDisplayBox(props) {
+const ProjectDisplayBox = (props) => {
     return(
         <Link className="ProjectDisplayBox" to= {'/projects/' + props.id}>
             <div className="PDB_Title">{props.title}</div>
@@ -14,6 +14,6 @@ function ProjectDisplayBox(props) {
 
         </Link>
     )
-}
+};
 
 export default ProjectDisplayBox;

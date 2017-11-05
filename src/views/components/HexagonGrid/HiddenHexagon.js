@@ -4,13 +4,13 @@
 import React from 'react';
 
 // Extra HiddenHexagons to stabilize the hexagonal pattern in a 2-3-2 formation.
-function HiddenHexagon () {
+const HiddenHexagon = () => {
     return(
         <li className="hex">
             <div className="hexIn hiddenHex">
             </div>
         </li>
     );
-}
+};
 
 export default HiddenHexagon;

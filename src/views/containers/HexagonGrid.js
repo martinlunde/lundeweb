@@ -12,12 +12,11 @@ import CenteredHexagon from '../components/HexagonGrid/CenteredHexagon';
  * at the front-page, such that certain projects are highlighted.
  */
 
-function HexagonalGrid (props) {
-
+const HexagonalGrid = (props) => {
     //Generating hexagons in a grid, such that the highlighted projects easily can be updated through a database.
-    var rows = [];
-    var x = 0;
-    for (var i=0; i < 10; i++) {
+    let rows = [];
+    let x = 0;
+    for (let i=0; i < 10; i++) {
         if(i < 3){
             rows.push(<HiddenHexagon key={i}/>);
         }else {

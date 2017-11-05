@@ -5,7 +5,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Hexagons intended to be used at the frontpage.
-function HighlightedHexagon (props) {
+const HighlightedHexagon = (props) => {
     return(
         <li className="hex">
             <div className="hexIn">
@@ -17,6 +17,6 @@ function HighlightedHexagon (props) {
             </div>
         </li>
     );
-}
+};
 
 export default HighlightedHexagon;

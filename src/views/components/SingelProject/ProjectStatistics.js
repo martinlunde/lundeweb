@@ -4,12 +4,12 @@
 import React from 'react';
 
 /* Statistics Section */
-function ProjectStatistics(){
+const ProjectStatistics = () => {
     return(
         <div className="StatisticsContainer">
 
         </div>
     );
-}
+};
 
 export default ProjectStatistics;

@@ -11,7 +11,7 @@ import SingelProject from './containers/SingelProject';
 //CSS
 
 //Define highligted project objects
-var PROJECTS = [
+const PROJECTS = [
     {
         id: 0,
         link: "/",

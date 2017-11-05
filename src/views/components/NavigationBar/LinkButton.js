@@ -4,7 +4,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export const LinkButton = (props) => {
+const LinkButton = (props) => {
     return(
         <Link className="LinkButton" to={ props.url} >{ props.title }</Link>
     );
