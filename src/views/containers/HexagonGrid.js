@@ -23,10 +23,10 @@ const HexagonalGrid = (props) => {
             if (i === 6) {
                 rows.push(<CenteredHexagon key={i}/>);
             } else {
-                rows.push(<HighlightedHexagon key={i} link={props.projects[x].link}
-                                              title={props.projects[x].title}
-                                              text={props.projects[x].text}
-                                              id={props.projects[x].id}/>);
+                rows.push(<HighlightedHexagon key={i} link={props.projects[props.highlighted[x]].link}
+                                              title={props.projects[props.highlighted[x]].title}
+                                              text={props.projects[props.highlighted[x]].text}
+                                              id={props.projects[props.highlighted[x]].id}/>);
                 x++;
             }
         }
@@ -38,6 +38,6 @@ const HexagonalGrid = (props) => {
             </ul>
         </div>
     );
-}
+};
 
 export default HexagonalGrid;

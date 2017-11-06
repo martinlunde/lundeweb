@@ -11,44 +11,45 @@ import SingelProject from './containers/SingelProject';
 //CSS
 
 //Define highligted project objects
-const PROJECTS = [
-    {
-        id: 0,
+const highlighted = [3214, 1243, 5555, 1234, 6612, 5972];
+const PROJECTS = {
+    3214: {
+        id: 3214,
         link: "/",
         title: "martinlunde.no",
         text: "This is my homepage!"
     },
-    {
-        id: 1,
+    1243: {
+        id: 1243,
         link: "/projects",
         title: "Yahoo!",
         text: "This is my favourite search engine!"
     },
-    {
-        id: 2,
+    5555: {
+        id: 5555,
         link: "/projects/",
         title: "projects/test",
         text: "This is my favourite search engine!"
     },
-    {
-        id: 3,
+    1234: {
+        id: 1234,
         link: "/",
         title: "Google",
         text: "This is my favourite search engine!"
     },
-    {
-        id: 4,
+    6612: {
+        id: 6612,
         link: "/",
         title: "Samfundet Booking",
         text: "Dette er et bookingsystem for samfundet."
     },
-    {
-        id: 5,
+    5972: {
+        id: 5972,
         link: "/",
         title: "Google",
         text: "This is my favourite search engine!"
-    },
-];
+    }
+};
 
 class App extends React.Component {
   render() {
@@ -56,7 +57,7 @@ class App extends React.Component {
         <div className="Container">
             <NavigationBar />
             <div>
-                <Route exact path="/" render={ () => <HexagonalGrid projects={PROJECTS}/>}/>
+                <Route exact path="/" render={ () => <HexagonalGrid projects={PROJECTS} highlighted={highlighted}/>}/>
                 <Route exact path="/projects" render={ () => <ProjectGallery projects={PROJECTS}/>}/>
                 <Route path="/projects/:id" render={ () => <SingelProject projects={PROJECTS}/>}/>
             </div>
