@@ -6,10 +6,10 @@ const Schema = mongoose.Schema;
 
 const ProjectSchema = new Schema({
     _id: { type: String },
-    description: { type: String, default: "none" },
-    link: { type: String, default: "/"},
     title: { type: String, default: "martinlunde.no"},
+    link: { type: String, default: "/"},
     lightDescription: { type: String, default: "This is a higlight description"},
+    description: { type: String, default: "none" },
 });
 
 const Project = mongoose.model('Project', ProjectSchema);
