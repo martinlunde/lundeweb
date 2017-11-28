@@ -27,7 +27,7 @@
     font-size: 30px;
 }
 
-.LinkButton:hover {
+.ActiveLinkButton {
     text-decoration: underline;
     text-decoration-color: #905EBD;
 }

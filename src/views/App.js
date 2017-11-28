@@ -17,7 +17,7 @@ class App extends React.Component {
             <NavigationBar />
             <div className="contentContainer">
                 <div className="renderedContent">
-                <Route exact path="/" render={ () => <Home/>}/>
+                    <Route exact path="/" render={ () => <Home/>}/>
                 </div>
             </div>
         </div>

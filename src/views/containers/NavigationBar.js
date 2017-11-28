@@ -11,17 +11,40 @@ class NavigationBar extends React.Component {
         super(props);
 
         this.state = {
-            dropdown: false,
-        }
+            active_button: 'Home',
+        };
+
+        this.onLinkChange = this.onLinkChange.bind(this);
+    }
+
+    onLinkChange(link) {
+        this.setState({
+            active_button: link
+        });
     }
 
     render(){
+        let navigation = [];
+        const LinkButtons = {
+            Home: {title: 'Home', url: '/', active: 'Home'},
+            Projects: {title: 'Projects', url: '/projects'},
+            About: {title: 'About', url: '/about'},
+            CV: {title: 'CV', url: '/cv'}
+        };
+
+        for (let key in LinkButtons) {
+            let nav = LinkButtons[key];
+            navigation.push(<LinkButton title={nav.title}
+                                        url={nav.url}
+                                        onClick={() => this.onLinkChange(nav.url)}
+                                        key={key}
+                                        className={ this.state.active_button === nav.url ? 'ActiveLinkButton': '' }
+            />)
+        }
+
         return(
             <nav className="NavbarContainer">
-                <LinkButton title="Home" url="/"/>
-                <LinkButton title="Projects" url="/"/>
-                <LinkButton title="About" url="/"/>
-                <LinkButton title="CV" url="/"/>
+                { navigation }
             </nav>
         );
     }
