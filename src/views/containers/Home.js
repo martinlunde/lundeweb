@@ -12,12 +12,10 @@ export class Home extends React.Component {
                         Lundeweb
                     </div>
                     <div className="HomePageText">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Nunc sed velit dignissim sodales ut. Accumsan in
-                        nisl nisi scelerisque eu ultrices vitae auctor eu. Aenean
-                        pharetra magna ac placerat vestibulum lectus mauris.
-                        Massa tincidunt nunc pulvinar sapien et ligula ullamcorper
+                        Welcome to my personal website! <br/>
+                        The purpose of this project is to make a showcase of my
+                        portfolio rather than linking directly to repositories of code.
+                        There will also, in the future, be an available CV and documentation.
                     </div>
                     <div className="LinkIcons">
                         <a href="https://github.com/martinlunde" className="GithubLogo">
