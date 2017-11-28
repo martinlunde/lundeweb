@@ -1,0 +1,23 @@
+body{
+    margin: 0 0 0 0;
+    background-color: #472D5E;
+    min-width: 380px;
+}
+
+.Container{
+    height: 100vh;
+}
+
+.contentContainer{
+    height: 100%;
+}
+
+.contentContainer div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.HexagonGrid img{
+    width: 40vh;
+}
