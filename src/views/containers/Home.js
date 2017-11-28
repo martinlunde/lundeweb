@@ -1,5 +1,7 @@
 import React from 'react';
-import {HexagonGrid} from "../components/HexagonGrid";
+import {HexagonGrid} from '../components/HexagonGrid';
+import GithubLogo from '../../assets/images/github.png';
+import LinkedIn from '../../assets/images/linkedin.png';
 
 export class Home extends React.Component {
     render() {
@@ -16,6 +18,14 @@ export class Home extends React.Component {
                         nisl nisi scelerisque eu ultrices vitae auctor eu. Aenean
                         pharetra magna ac placerat vestibulum lectus mauris.
                         Massa tincidunt nunc pulvinar sapien et ligula ullamcorper
+                    </div>
+                    <div className="LinkIcons">
+                        <a href="https://github.com/martinlunde" className="GithubLogo">
+                            <img src={GithubLogo} alt="GithubLogo"/>
+                        </a>
+                        <a href="https://linkedin.com/in/martinlunde" className="LinkedInLogo">
+                            <img src={LinkedIn} alt="LinkedInLogo"/>
+                        </a>
                     </div>
                 </div>
                 <div className="HexagonGridWrapper">
