@@ -13,11 +13,33 @@ body{
 }
 
 .contentContainer div{
+}
+
+.HexagonGrid img{
+    width: 40vh;
+}
+
+.HexagonGridWrapper {
     position: absolute;
     bottom: 0;
     right: 0;
 }
 
-.HexagonGrid img{
-    width: 40vh;
+.HomePageTextWrapper {
+    width: 40vw;
+    min-width: 300px;
+    position: absolute;
+    left: 15vw;
+    top: 20vh;
+    color: #AE97C2;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+}
+
+.HomePageTitle {
+    font-size: calc(36px + 5vw);
+}
+
+.HomePageText {
+    font-size: calc(12px + 0.5vw);
 }
