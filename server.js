@@ -27,11 +27,7 @@ app.use(bodyParser.json());
 // Set api route
 app.use('/api', router);
 
-app.use(express.static(__dirname + '/build/static'));
-
-app.get('*', function(req, res) {
-    res.sendFile(__dirname + '/build/index.html');
-});
+app.use(express.static(__dirname + '/build'));
 
 app.listen(8000, function () {
     console.log('\nThe server is now running on port 8000...\n' +
