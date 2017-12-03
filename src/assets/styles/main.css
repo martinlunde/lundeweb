@@ -2,6 +2,7 @@ body{
     margin: 0 0 0 0;
     background-color: #472D5E;
     min-width: 380px;
+    font-family: 'Roboto Slab', serif;
 }
 
 .Container{
