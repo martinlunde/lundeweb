@@ -43,3 +43,30 @@
     -ms-transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
     transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
 }
+
+.Footer {
+    width: 450px;
+    height: 450px;
+    background: white;
+    margin-top: 225px;
+    margin-left: 225px;
+    -moz-transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -webkit-transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -o-transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -ms-transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+}
+
+.Footer h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.FooterWrapper {
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    right: 0;
+}

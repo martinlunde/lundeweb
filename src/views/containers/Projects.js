@@ -47,8 +47,15 @@ export class Projects extends React.Component {
         const projects = this.loadProjects(this.projectList);
         console.log(projects);
         return(
-            <div className="ProjectContainer">
-                { projects }
+            <div>
+                <div className="ProjectContainer">
+                    { projects }
+                </div>
+                <div className="FooterWrapper">
+                    <div className="Footer">
+                        <h1>Featured Projects</h1>
+                    </div>
+                </div>
             </div>
         );
     }
