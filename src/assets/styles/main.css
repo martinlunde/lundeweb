@@ -1,0 +1,55 @@
+body{
+    margin: 0 0 0 0;
+    background-color: #472D5E;
+    min-width: 380px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.Container{
+    height: 100vh;
+}
+
+.contentContainer{
+    height: 100%;
+}
+
+.contentContainer div{
+}
+
+.HexagonGrid img{
+    width: 40vh;
+}
+
+.HexagonGridWrapper {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.HomePageTextWrapper {
+    width: 40vw;
+    min-width: 300px;
+    position: absolute;
+    left: 15vw;
+    top: 20vh;
+    color: #AE97C2;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+}
+
+.HomePageTitle {
+    font-size: calc(36px + 5vw);
+}
+
+.HomePageText {
+    font-size: calc(12px + 0.5vw);
+}
+
+.LinkIcons {
+    margin-top: 30px;
+}
+
+.GithubLogo img, .LinkedInLogo img {
+    margin-right: 20px;
+    width: calc(24px + 2.5vw);
+}

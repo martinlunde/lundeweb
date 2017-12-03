@@ -1,23 +1,14 @@
 /* Navbar CSS */
 
 .NavbarContainer {
-    background-color: #6e6e6e;
+    position: relative;
+    margin-bottom: -50px;
     height: 50px;
     z-index: 10;
     display: flex;
     overflow: hidden;
-    position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
-}
-
-.name-link {
-    padding-left: 20px;
-    margin-top: -6px;
-    font-family: 'Rochester', cursive;
-    font-size: 40px;
-    text-decoration: none;
-    color: white;
 }
 
 .navButtons {
@@ -27,15 +18,17 @@
 }
 
 .LinkButton {
-    width: 200px;
+    width: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     text-decoration: none;
     font-size: 30px;
+    font-family: 'Roboto Slab', serif;
 }
 
-.LinkButton:hover {
-    background-color: #898989;
+.ActiveLinkButton {
+    text-decoration: underline;
+    text-decoration-color: #905EBD;
 }

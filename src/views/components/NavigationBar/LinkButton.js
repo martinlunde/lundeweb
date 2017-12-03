@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const LinkButton = (props) => {
     return(
-        <Link className="LinkButton" to={ props.url} >{ props.title }</Link>
+        <Link className={props.className + ' LinkButton'} to={ props.url} onClick={ props.onClick }>{ props.title }</Link>
     );
 };
 
