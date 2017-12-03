@@ -45,7 +45,7 @@ router.get('/', (req, res) => {
     res.send('api works');
 });
 
-router.post('/new', (req, res) => {
+router.post('/project/new', (req, res) => {
     const project = new Project({
         description: req.body.text,
         link: req.body.link,
@@ -64,9 +64,13 @@ router.post('/new', (req, res) => {
     );
 });
 
-router.get('/see', (req, res) => {
+router.get('/projects', (req, res) => {
     Project.find(function (err, projects) {
-        if(err) return console.error(err);
-        console.log(projects);
+        if (err) {
+            res.status(401).send(err.message);
+        } else {
+            console.log("success");
+            res.status(200).json(projects);
+        }
     })
 });
