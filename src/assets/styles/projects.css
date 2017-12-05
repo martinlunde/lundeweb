@@ -6,7 +6,7 @@
     margin: 0 50px 0 50px ;
 }
 
-.Project {
+.Projects {
     display: flex;
     z-index: -1;
     width: 300px;
@@ -19,7 +19,7 @@
     overflow: hidden;
 }
 
-.Project div{
+.Projects div{
     display: flex;
     justify-content: flex-end;
     background-color: #905EBD;
@@ -36,13 +36,17 @@
     transform: scale(1) rotate(-20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
 }
 
-.Project h1{
+.Projects h1{
     color: white;
     -moz-transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
     -webkit-transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
     -o-transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
     -ms-transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
     transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+}
+
+.ProjectsWrapper {
+    text-decoration: none;
 }
 
 /* Single Project Display */
@@ -91,6 +95,10 @@
     display: flex;
     flex-direction: column;
     width: 40vw;
+}
+
+.ProjectAssets img {
+    height: 8vw;
 }
 
 /* Footer */

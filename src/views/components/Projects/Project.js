@@ -6,10 +6,10 @@ export const Project = (props) => {
     const image = temporary;
 
     return(
-        <Link to={"projects/" + props._id}>
-            <div className="Project" style={{backgroundImage: `url(${image})`}}>
+        <Link className="ProjectsWrapper" to={"projects/" + props._id}>
+            <div className="Projects" style={{backgroundImage: `url(${image})`}}>
                 <div className="triangle">
-                    <h1 className="ProjectTitle">{props.title}</h1>
+                    <h1 className="ProjectsTitle">{props.title}</h1>
                 </div>
             </div>
         </Link>
