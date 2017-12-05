@@ -70,3 +70,13 @@ router.get('/projects', (req, res) => {
         }
     })
 });
+
+router.get('/project', (req, res) => {
+    db.collection('projects').findOne({'_id': req.param('id')}, (err, project) =>{
+        if (err) {
+            res.status(401).json(err.message);
+        } else {
+            res.status(200).json(project);
+        }
+    });
+});

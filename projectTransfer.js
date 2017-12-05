@@ -29,46 +29,18 @@ list_of_projects = [
             title: "Lundeweb",
             link: "/",
             lightDescription: "This is my homepage!",
-            description: "This is my supreme homepage!"
+            description: "This is my supreme homepage!",
+            assets: ['mongo', 'node', 'react']
         },
-        {
-            title: "Lundeweb",
-            link: "/",
-            lightDescription: "This is my homepage!",
-            description: "This is my supreme homepage!"
-        },
-        {
-            title: "Lundeweb",
-            link: "/",
-            lightDescription: "This is my homepage!",
-            description: "This is my supreme homepage!"
-        },
-        {
-            title: "Lundeweb",
-            link: "/",
-            lightDescription: "This is my homepage!",
-            description: "This is my supreme homepage!"
-        },
-        {
-            title: "Lundeweb",
-            link: "/",
-            lightDescription: "This is my homepage!",
-            description: "This is my supreme homepage!"
-        },
-        {
-            title: "Lundeweb",
-            link: "/",
-            lightDescription: "This is my homepage!",
-            description: "This is my supreme homepage!"
-        }
 ];
 
 for(let key in list_of_projects){
     let new_project = new project_model({
-       title: list_of_projects[key].title,
-       link: list_of_projects[key].link,
-       lightDescription: list_of_projects[key].lightDescription,
-       description: list_of_projects[key].description
+        title: list_of_projects[key].title,
+        link: list_of_projects[key].link,
+        lightDescription: list_of_projects[key].lightDescription,
+        description: list_of_projects[key].description,
+        assets: list_of_projects[key].assets
     });
     db.collection('projects').save(new_project,
         function(err, docs) {

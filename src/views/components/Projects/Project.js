@@ -1,14 +1,17 @@
 import React from 'react';
-import test from '../../../assets/images/blockbuster.png';
+import { Link } from 'react-router-dom';
+import temporary from '../../../assets/images/blockbuster.png';
 
 export const Project = (props) => {
-    const image = test;
+    const image = temporary;
 
     return(
-        <div className="Project" style={{backgroundImage: `url(${image})`}}>
-            <div className="triangle">
-                <h1 className="ProjectTitle">test</h1>
+        <Link to={"projects/" + props._id}>
+            <div className="Project" style={{backgroundImage: `url(${image})`}}>
+                <div className="triangle">
+                    <h1 className="ProjectTitle">{props.title}</h1>
+                </div>
             </div>
-        </div>
+        </Link>
     );
 };

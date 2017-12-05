@@ -6,9 +6,11 @@ import {Route} from 'react-router-dom';
 import NavigationBar from './containers/NavigationBar';
 import {Home} from './containers/Home';
 import {Projects} from "./containers/Projects";
+import {AboutProject} from "./containers/AboutProject";
 
 //CSS
 import '../assets/styles/main.css';
+
 
 
 class App extends React.Component {
@@ -20,6 +22,7 @@ class App extends React.Component {
                 <div className="renderedContent">
                     <Route exact path="/" render={ () => <Home/>}/>
                     <Route exact path ="/projects" render={ () => <Projects/>}/>
+                    <Route path="/projects/:id" render={ () => <AboutProject/>}/>
                 </div>
             </div>
         </div>

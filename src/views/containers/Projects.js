@@ -5,25 +5,19 @@ import {Project} from "../components/Projects/Project";
 export class Projects extends React.Component {
     constructor(){
         super();
-        this.projectList = [
-            {
-                _id: "0001",
-                title: "Project 1",
-                link: "/",
-                lightDescription: "this is a light description",
-                description: "This is a bit more heavy description that should not be used in the thumbnail."
-            },
-            {
-                _id: "0002",
-                title: "Project 1",
-                link: "/",
-                lightDescription: "this is a light description",
-                description: "This is a bit more heavy description that should not be used in the thumbnail."
-            },
-        ];
+        this.state = {
+            projects: []
+        }
     }
 
     componentDidMount() {
+        fetch('/api/projects').then( result => {
+            result.json().then((data) => {
+                this.setState({
+                    projects: data
+                });
+            });
+        });
     }
 
     loadProjects(p){
@@ -34,9 +28,6 @@ export class Projects extends React.Component {
                     _id={p[key]._id}
                     key={p[key]._id}
                     title={p[key].title}
-                    link={p[key].link}
-                    light={p[key].lightDescription}
-                    desc={p[key].description}
                 />
             )
         }
@@ -44,8 +35,7 @@ export class Projects extends React.Component {
     }
 
     render() {
-        const projects = this.loadProjects(this.projectList);
-        console.log(projects);
+        const projects = this.loadProjects(this.state.projects);
         return(
             <div>
                 <div className="ProjectContainer">
