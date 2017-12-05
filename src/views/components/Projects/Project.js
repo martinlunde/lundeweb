@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import temporary from '../../../assets/images/blockbuster.png';
+import {projectImages} from "../../../assets/images/projects/projectImages";
 
 export const Project = (props) => {
-    const image = temporary;
+    const image = projectImages[props.image];
 
     return(
         <Link className="ProjectsWrapper" to={"projects/" + props._id}>

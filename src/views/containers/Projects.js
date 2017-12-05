@@ -28,6 +28,7 @@ export class Projects extends React.Component {
                     _id={p[key]._id}
                     key={p[key]._id}
                     title={p[key].title}
+                    image={p[key].image}
                 />
             )
         }

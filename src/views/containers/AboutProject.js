@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../assets/styles/projects.css';
-import temporary from '../../assets/images/blockbuster.png';
 import {assetHex} from '../../assets/images/hex/hex';
+import {projectImages} from "../../assets/images/projects/projectImages";
 
 export class AboutProject extends React.Component {
     constructor(props){
@@ -40,7 +40,7 @@ export class AboutProject extends React.Component {
         return(
             <div>
                 <div className="CornerThumbnail">
-                    <img src={temporary}/>
+                    <img src={projectImages[project.image]}/>
                 </div>
                 <div className="ProjectWrapper">
                     <div className="ProjectContent">

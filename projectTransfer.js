@@ -33,7 +33,8 @@ list_of_projects = [
             "this website was born. Lundeweb is a showcase website for all my ongoing and/or\n finished " +
             "projects that i find suitable to put on display, and everything else i would like to experiment\n" +
             "with to further improve my knowledge.",
-            assets: ['mongo', 'node', 'react']
+            assets: ['mongo', 'node', 'react'],
+            image: 'lundeweb'
         },
         {
             title: "BlockBuster",
@@ -42,7 +43,8 @@ list_of_projects = [
             description: "While taking the course IT2810 (Web Development) at NTNU, we had to deliver a website\n" +
             "based on Angular. BlockBuster was my groups answer to this task, and is a website for looking up movies\n" +
             "in a database developed by using the mean stack and Material-UI",
-            assets: ['mongo', 'node', 'angular']
+            assets: ['mongo', 'node', 'angular'],
+            image: 'blockbuster'
         }
 ];
 
@@ -52,7 +54,8 @@ for(let key in list_of_projects){
         link: list_of_projects[key].link,
         lightDescription: list_of_projects[key].lightDescription,
         description: list_of_projects[key].description,
-        assets: list_of_projects[key].assets
+        assets: list_of_projects[key].assets,
+        image: list_of_projects[key].image
     });
     db.collection('projects').save(new_project,
         function(err, docs) {

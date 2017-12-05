@@ -11,6 +11,7 @@ const ProjectSchema = new Schema({
     lightDescription: { type: String, default: "N/A"},
     description: { type: String, default: "N/A" },
     assets: { type: Array, default: []},
+    image: { type: String, default: 'blockbuster'}
 });
 
 const Project = mongoose.model('Project', ProjectSchema);
