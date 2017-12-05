@@ -1,3 +1,4 @@
+/* Projects Showcase */
 .ProjectContainer {
     display: flex;
     flex-wrap: wrap;
@@ -5,7 +6,7 @@
     margin: 0 50px 0 50px ;
 }
 
-.Project {
+.Projects {
     display: flex;
     z-index: -1;
     width: 300px;
@@ -18,7 +19,7 @@
     overflow: hidden;
 }
 
-.Project div{
+.Projects div{
     display: flex;
     justify-content: flex-end;
     background-color: #905EBD;
@@ -35,7 +36,7 @@
     transform: scale(1) rotate(-20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
 }
 
-.Project h1{
+.Projects h1{
     color: white;
     -moz-transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
     -webkit-transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
@@ -43,3 +44,88 @@
     -ms-transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
     transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
 }
+
+.ProjectsWrapper {
+    text-decoration: none;
+}
+
+/* Single Project Display */
+.ProjectWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -20vw;
+    justify-content: center;
+}
+
+.CornerThumbnail {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.CornerThumbnail img {
+    height: 20vw;
+    -webkit-clip-path: polygon(0 0,0 0,39vw 20vw,39vw 0);
+}
+
+.ProjectTitle {
+    font-size: calc(36px + 5vw);
+}
+
+.ProjectText {
+    font-size: calc(12px + 0.5vw);
+    padding-bottom: 3vh;
+}
+
+.ProjectContent {
+    position: absolute;
+    left: 6vw;
+    top: 20vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.ProjectContentLeft {
+    color: #AE97C2;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.ProjectContentRight {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+}
+
+.ProjectAssets img {
+    height: 8vw;
+}
+
+/* Footer */
+.Footer {
+    width: 450px;
+    height: 450px;
+    background: white;
+    margin-top: 225px;
+    margin-left: 225px;
+    -moz-transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -webkit-transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -o-transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -ms-transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+}
+
+.Footer h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.FooterWrapper {
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    right: 0;
+}
+
