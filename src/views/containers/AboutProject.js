@@ -50,10 +50,7 @@ export class AboutProject extends React.Component {
                                 { project.title }
                             </div>
                             <div className="ProjectText">
-                                Welcome to my personal website! <br/>
-                                The purpose of this project is to make a showcase of my
-                                portfolio rather than linking directly to repositories of code.
-                                There will also, in the future, be an available CV and documentation.
+                                { project.description }
                             </div>
                             <div className="ProjectAssets">
                                 { projectAssets }
