@@ -3,6 +3,7 @@ import pimReact from './react.png';
 import lundeweb from './lundeweb.png';
 import samfundet from './samfundet.png';
 import bms from './bms.png';
+import onlineweb from './onlineweb.png';
 
 export const projectImages = {
     blockbuster: blockbuster,
@@ -10,4 +11,5 @@ export const projectImages = {
     lundeweb: lundeweb,
     samfundet: samfundet,
     bms: bms,
+    onlineweb: onlineweb
 };

@@ -33,7 +33,7 @@ list_of_projects = [
             "this website was born. Lundeweb is a showcase website for all my ongoing and/or\n finished " +
             "projects that i find suitable to put on display, and everything else i would like to experiment\n" +
             "with to further improve my knowledge.",
-            assets: ['mongo', 'node', 'react'],
+            assets: ['mongo', 'express', 'reactHex', 'node'],
             image: 'lundeweb'
         },
         {
@@ -43,8 +43,40 @@ list_of_projects = [
             description: "While taking the course IT2810 (Web Development) at NTNU, we had to deliver a website\n" +
             "based on Angular. BlockBuster was my groups answer to this task, and is a website for looking up movies\n" +
             "in a database developed by using the mean stack and Material-UI",
-            assets: ['mongo', 'node', 'angular'],
+            assets: ['mongo', 'express', 'angular', 'node'],
             image: 'blockbuster'
+        },
+        {
+            title: "PIM",
+            link: "/",
+            lightDescription: "IT2810 - React",
+            description: "While taking the course IT2810 (Web Development) at NTNU, we were introduced to the concept\n" +
+            "of using more than just pure javascript, html and css. React is one the most popular frameworks at the time\n" +
+            "writing, and we had to develop a 'Personal Information Manager' with calendar, notes and todolists.\n This was" +
+            "an easier introduction to React, but did also include a dive into React-Native.",
+            assets: ['mongo', 'express', 'reactHex', 'node'],
+            image: 'pim'
+        },
+        {
+            title: "Samfundet",
+            link: "/",
+            lightDescription: "IT1901 - Informatikk Prosjektarbeid 1",
+            description: "One of my earlier projects pursuing my masters degree, was to develop a system keeping track\n" +
+            " of different tasks at 'Samfundet'. This system was built on the earlier AngularJS platform and the " +
+            "NoSQL database Firebase.",
+            assets: ['firebase', 'angular', 'node'],
+            image: 'samfundet'
+        },
+        {
+            title: "OnlineWeb",
+            link: "https://online.ntnu.no",
+            lightDescription: "Online, Linjeforningen for informatikk",
+            description: "As a student of Computer Science, i have also chosen to contribute to our\n" +
+            " voluntary organization 'Online'. I am a part of the so called 'drifts- og utviklingskomiteen' where\n" +
+            "we gather for weekly meetings throughout the semesters, to discuss the future of our platform OnlineWeb\n" +
+            "and how it can be used to improve our day to day lives as students.",
+            assets: ['django', 'reactHex', 'node', 'docker'],
+            image: 'onlineweb'
         }
 ];
 

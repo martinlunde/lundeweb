@@ -13,8 +13,8 @@
     height: 200px;
     margin: 15px 15px 15px 15px;
     background-size: 300px;
-    border-radius: 30px;
-    border: solid 1px #9B51E0;
+    border-radius: 5px;
+    border: solid 0.5px #000000;
     align-items: flex-end;
     overflow: hidden;
 }
@@ -22,27 +22,20 @@
 .Projects div{
     display: flex;
     justify-content: flex-end;
-    background-color: #905EBD;
+    align-items: center;
+    background-color: #333738;
     opacity: 0.9;
     width: 100%;
-    height: 50%;
-    margin-bottom: -15%;
-    margin-right: -10%;
-    padding-right: 30px;
-    -moz-transform: scale(1) rotate(-20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-    -webkit-transform: scale(1) rotate(-20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-    -o-transform: scale(1) rotate(-20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-    -ms-transform: scale(1) rotate(-20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-    transform: scale(1) rotate(-20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    height: 25%;
+    padding-right: 10px;
 }
 
-.Projects h1{
+.triangle{
+    display: flex;
+}
+
+.triangle div{
     color: white;
-    -moz-transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-    -webkit-transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-    -o-transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-    -ms-transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-    transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
 }
 
 .ProjectsWrapper {
@@ -57,14 +50,23 @@
     justify-content: center;
 }
 
-.CornerThumbnail {
+.CornerThumbnailContainer {
     display: flex;
     justify-content: flex-end;
 }
 
+.CornerThumbnail {
+    -webkit-clip-path: polygon(0 0,0 0,39vw 20vw,39vw 0);
+    -moz-clip-path: polygon(0 0,0 0,39vw 20vw,39vw 0);
+    background-color: black;
+}
+
 .CornerThumbnail img {
+    position: relative;
+    top: -2.5px;
     height: 20vw;
     -webkit-clip-path: polygon(0 0,0 0,39vw 20vw,39vw 0);
+    -moz-clip-path: polygon(0 0,0 0,39vw 20vw,39vw 0);
 }
 
 .ProjectTitle {
@@ -76,7 +78,7 @@
     padding-bottom: 3vh;
 }
 
-.ProjectContent {
+.ProjectContent{
     position: absolute;
     left: 6vw;
     top: 20vh;
@@ -84,14 +86,14 @@
     flex-direction: row;
 }
 
-.ProjectContentLeft {
+.ProjectContentLeft{
     color: #AE97C2;
     width: 40vw;
     display: flex;
     flex-direction: column;
 }
 
-.ProjectContentRight {
+.ProjectContentRight{
     display: flex;
     flex-direction: column;
     width: 40vw;

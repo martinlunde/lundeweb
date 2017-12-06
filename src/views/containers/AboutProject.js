@@ -1,7 +1,7 @@
 import React from 'react';
-import '../../assets/styles/projects.css';
 import {assetHex} from '../../assets/images/hex/hex';
 import {projectImages} from "../../assets/images/projects/projectImages";
+import '../../assets/styles/projects.css';
 
 export class AboutProject extends React.Component {
     constructor(props){
@@ -29,7 +29,7 @@ export class AboutProject extends React.Component {
     loadProjectAssets(project){
         const assetList = [];
         for (let key in project.assets){
-            assetList.push(<img src={assetHex[project.assets[key]]} alt="ProjectAsset"/>)
+            assetList.push(<img src={assetHex[project.assets[key]]} key={key} alt="ProjectAsset"/>)
         }
         return assetList;
     }
@@ -39,8 +39,10 @@ export class AboutProject extends React.Component {
         const projectAssets = this.loadProjectAssets(project);
         return(
             <div>
-                <div className="CornerThumbnail">
-                    <img src={projectImages[project.image]}/>
+                <div className="CornerThumbnailContainer">
+                    <div className="CornerThumbnail">
+                        <img src={projectImages[project.image]} alt="Thumbnail"/>
+                    </div>
                 </div>
                 <div className="ProjectWrapper">
                     <div className="ProjectContent">
