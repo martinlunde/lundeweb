@@ -64,6 +64,7 @@
 
 .CornerThumbnail {
     -webkit-clip-path: polygon(0 0,0 0,39vw 20vw,39vw 0);
+    -moz-clip-path: polygon(0 0,0 0,39vw 20vw,39vw 0);
     background-color: black;
 }
 
@@ -72,6 +73,7 @@
     top: -2.5px;
     height: 20vw;
     -webkit-clip-path: polygon(0 0,0 0,39vw 20vw,39vw 0);
+    -moz-clip-path: polygon(0 0,0 0,39vw 20vw,39vw 0);
 }
 
 .ProjectTitle {
