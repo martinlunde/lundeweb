@@ -47,7 +47,7 @@ list_of_projects = [
             image: 'blockbuster'
         },
         {
-            title: "Personal Information Manager",
+            title: "PIM",
             link: "/",
             lightDescription: "IT2810 - React",
             description: "While taking the course IT2810 (Web Development) at NTNU, we were introduced to the concept\n" +
@@ -58,7 +58,7 @@ list_of_projects = [
             image: 'pim'
         },
         {
-            title: "Samfundet - Booking",
+            title: "Samfundet",
             link: "/",
             lightDescription: "IT1901 - Informatikk Prosjektarbeid 1",
             description: "One of my earlier projects pursuing my masters degree, was to develop a system keeping track\n" +
