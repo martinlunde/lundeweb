@@ -9,7 +9,7 @@ export const Project = (props) => {
         <Link className="ProjectsWrapper" to={"projects/" + props._id}>
             <div className="Projects" style={{backgroundImage: `url(${image})`}}>
                 <div className="triangle">
-                    <h1 className="ProjectsTitle">{props.title}</h1>
+                    <div className="ProjectsTitle">{props.title}</div>
                 </div>
             </div>
         </Link>

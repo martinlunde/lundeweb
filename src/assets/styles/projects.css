@@ -14,7 +14,7 @@
     margin: 15px 15px 15px 15px;
     background-size: 300px;
     border-radius: 5px;
-    border: solid 0.5px #9B51E0;
+    border: solid 0.5px #000000;
     align-items: flex-end;
     overflow: hidden;
 }
@@ -22,27 +22,20 @@
 .Projects div{
     display: flex;
     justify-content: flex-end;
-    background-color: #905EBD;
+    align-items: center;
+    background-color: #333738;
     opacity: 0.9;
     width: 100%;
-    height: 50%;
-    margin-bottom: -15%;
-    margin-right: -10%;
-    padding-right: 30px;
-    -moz-transform: scale(1) rotate(-20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-    -webkit-transform: scale(1) rotate(-20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-    -o-transform: scale(1) rotate(-20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-    -ms-transform: scale(1) rotate(-20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-    transform: scale(1) rotate(-20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    height: 25%;
+    padding-right: 10px;
 }
 
-.Projects h1{
+.triangle{
+    display: flex;
+}
+
+.triangle div{
     color: white;
-    -moz-transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-    -webkit-transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-    -o-transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-    -ms-transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-    transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
 }
 
 .ProjectsWrapper {
