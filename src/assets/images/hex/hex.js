@@ -4,6 +4,8 @@ import javaHex from './java.png';
 import mongoHex from './mongo.png';
 import reactHex from './react.png';
 import nodeHex from './node.png';
+import expressHex from './express.png';
+import firebaseHex from './firebase.png';
 
 export const assetHex = {
     angular: angularHex,
@@ -11,5 +13,7 @@ export const assetHex = {
     java: javaHex,
     mongo: mongoHex,
     react: reactHex,
-    node: nodeHex
+    node: nodeHex,
+    firebase: firebaseHex,
+    express: expressHex
 };
