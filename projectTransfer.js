@@ -33,7 +33,7 @@ list_of_projects = [
             "this website was born. Lundeweb is a showcase website for all my ongoing and/or\n finished " +
             "projects that i find suitable to put on display, and everything else i would like to experiment\n" +
             "with to further improve my knowledge.",
-            assets: ['mongo', 'express', 'react', 'node'],
+            assets: ['mongo', 'express', 'reactHex', 'node'],
             image: 'lundeweb'
         },
         {
@@ -54,8 +54,8 @@ list_of_projects = [
             "of using more than just pure javascript, html and css. React is one the most popular frameworks at the time\n" +
             "writing, and we had to develop a 'Personal Information Manager' with calendar, notes and todolists.\n This was" +
             "an easier introduction to React, but did also include a dive into React-Native.",
-            assets: ['mongo', 'express', 'react', 'node'],
-            image: 'react'
+            assets: ['mongo', 'express', 'reactHex', 'node'],
+            image: 'pim'
         },
         {
             title: "Samfundet - Booking",
@@ -66,6 +66,17 @@ list_of_projects = [
             "NoSQL database Firebase.",
             assets: ['firebase', 'angular', 'node'],
             image: 'samfundet'
+        },
+        {
+            title: "OnlineWeb",
+            link: "https://online.ntnu.no",
+            lightDescription: "Online, Linjeforningen for informatikk",
+            description: "As a student of Computer Science, i have also chosen to contribute to our\n" +
+            " voluntary organization 'Online'. I am a part of the so called 'drifts- og utviklingskomiteen' where\n" +
+            "we gather for weekly meetings throughout the semesters, to discuss the future of our platform OnlineWeb\n" +
+            "and how it can be used to improve our day to day lives as students.",
+            assets: ['django', 'reactHex', 'node', 'docker'],
+            image: 'onlineweb'
         }
 ];
 
