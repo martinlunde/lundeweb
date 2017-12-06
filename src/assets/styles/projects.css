@@ -76,7 +76,7 @@
     padding-bottom: 3vh;
 }
 
-.ProjectContent {
+.ProjectContent{
     position: absolute;
     left: 6vw;
     top: 20vh;
@@ -84,14 +84,14 @@
     flex-direction: row;
 }
 
-.ProjectContentLeft {
+.ProjectContentLeft{
     color: #AE97C2;
     width: 40vw;
     display: flex;
     flex-direction: column;
 }
 
-.ProjectContentRight {
+.ProjectContentRight{
     display: flex;
     flex-direction: column;
     width: 40vw;
