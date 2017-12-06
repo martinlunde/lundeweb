@@ -13,8 +13,8 @@
     height: 200px;
     margin: 15px 15px 15px 15px;
     background-size: 300px;
-    border-radius: 30px;
-    border: solid 1px #9B51E0;
+    border-radius: 5px;
+    border: solid 0.5px #9B51E0;
     align-items: flex-end;
     overflow: hidden;
 }
@@ -57,12 +57,19 @@
     justify-content: center;
 }
 
-.CornerThumbnail {
+.CornerThumbnailContainer {
     display: flex;
     justify-content: flex-end;
 }
 
+.CornerThumbnail {
+    -webkit-clip-path: polygon(0 0,0 0,39vw 20vw,39vw 0);
+    background-color: black;
+}
+
 .CornerThumbnail img {
+    position: relative;
+    top: -2.5px;
     height: 20vw;
     -webkit-clip-path: polygon(0 0,0 0,39vw 20vw,39vw 0);
 }

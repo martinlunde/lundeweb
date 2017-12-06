@@ -39,8 +39,10 @@ export class AboutProject extends React.Component {
         const projectAssets = this.loadProjectAssets(project);
         return(
             <div>
-                <div className="CornerThumbnail">
-                    <img src={projectImages[project.image]} alt="Thumbnail"/>
+                <div className="CornerThumbnailContainer">
+                    <div className="CornerThumbnail">
+                        <img src={projectImages[project.image]} alt="Thumbnail"/>
+                    </div>
                 </div>
                 <div className="ProjectWrapper">
                     <div className="ProjectContent">
