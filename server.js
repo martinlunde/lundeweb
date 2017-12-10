@@ -29,8 +29,8 @@ app.use('/api', router);
 
 app.use(express.static(__dirname + '/build'));
 
-app.listen(8000, function () {
-    console.log('\nThe server is now running on port 8000...\n' +
+app.listen(8080, function () {
+    console.log('\nThe server is now running on port 8080...\n' +
         'Press ctrl + C to shutdown the server.\n')
 });
 
