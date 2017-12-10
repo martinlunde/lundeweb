@@ -19,6 +19,10 @@
     overflow: hidden;
 }
 
+.Projects:hover {
+    box-shadow: 1px 1px 7px orange;
+}
+
 .Projects div{
     display: flex;
     justify-content: flex-end;
