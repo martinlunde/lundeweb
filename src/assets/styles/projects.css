@@ -2,7 +2,7 @@
 .ProjectContainer {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 200px;
+    padding-top: 15vh;
     margin: 0 50px 0 50px ;
 }
 
@@ -24,7 +24,7 @@
     justify-content: flex-end;
     align-items: center;
     background-color: #333738;
-    opacity: 0.9;
+    opacity: 0.96;
     width: 100%;
     height: 25%;
     padding-right: 10px;
@@ -35,7 +35,7 @@
 }
 
 .triangle div{
-    color: white;
+    color: #FFA657;
 }
 
 .ProjectsWrapper {
@@ -87,10 +87,14 @@
 }
 
 .ProjectContentLeft{
-    color: #AE97C2;
+    color: white;
     width: 40vw;
     display: flex;
     flex-direction: column;
+}
+
+.ProjectContentLeft .ProjectTitle {
+    color: #FFA657;
 }
 
 .ProjectContentRight{

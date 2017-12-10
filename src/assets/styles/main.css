@@ -1,6 +1,6 @@
 body{
     margin: 0 0 0 0;
-    background-color: #472D5E;
+    background-color: #454545;
     min-width: 380px;
     font-family: 'Roboto Slab', serif;
 }
@@ -32,7 +32,7 @@ body{
     position: absolute;
     left: 15vw;
     top: 20vh;
-    color: #AE97C2;
+    color: #FFA657;
     font-family: 'Roboto Slab', serif;
     font-weight: bold;
 }
