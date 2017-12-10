@@ -75,7 +75,16 @@
 
 .ProjectText {
     font-size: calc(12px + 0.5vw);
-    padding-bottom: 3vh;
+    padding-bottom: 20px;
+}
+
+.ProjectLink a {
+    color: #FFA657;
+    text-decoration: none;
+}
+
+.ProjectLink {
+    padding-bottom: 3vh; 
 }
 
 .ProjectContent{
@@ -129,7 +138,7 @@
 .FooterWrapper {
     width: 450px;
     height: 450px;
-    position: absolute;
+    position: fixed;
     overflow: hidden;
     bottom: 0;
     right: 0;
