@@ -54,6 +54,9 @@ export class AboutProject extends React.Component {
                             <div className="ProjectText">
                                 { project.description }
                             </div>
+                            <div className="ProjectLink">
+                                Read more about the project here: <a href={ project.link }>GitHub</a>
+                            </div>
                             <div className="ProjectAssets">
                                 { projectAssets }
                             </div>

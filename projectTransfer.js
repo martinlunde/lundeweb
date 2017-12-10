@@ -27,7 +27,7 @@ mongoose.connection.collections['projects'].drop( function(err) {
 list_of_projects = [
         {
             title: "Lundeweb",
-            link: "/",
+            link: "https://github.com/martinlunde/lundeweb",
             lightDescription: "This is my homepage!",
             description: "While having a need to do something besides reading theory at the end\n of the semester, " +
             "this website was born. Lundeweb is a showcase website for all my ongoing and/or\n finished " +
@@ -38,7 +38,7 @@ list_of_projects = [
         },
         {
             title: "BlockBuster",
-            link: "/",
+            link: "https://github.com/martinlunde/IT2810-Angular",
             lightDescription: "IT2810 - Angular",
             description: "While taking the course IT2810 (Web Development) at NTNU, we had to deliver a website\n" +
             "based on Angular. BlockBuster was my groups answer to this task, and is a website for looking up movies\n" +
@@ -48,18 +48,18 @@ list_of_projects = [
         },
         {
             title: "PIM",
-            link: "/",
+            link: "https://github.com/martinlunde/IT2810-React-and-Native",
             lightDescription: "IT2810 - React",
             description: "While taking the course IT2810 (Web Development) at NTNU, we were introduced to the concept\n" +
             "of using more than just pure javascript, html and css. React is one the most popular frameworks at the time\n" +
             "writing, and we had to develop a 'Personal Information Manager' with calendar, notes and todolists.\n This was" +
-            "an easier introduction to React, but did also include a dive into React-Native.",
+            " an easier introduction to React, but did also include a dive into React-Native.",
             assets: ['mongo', 'express', 'reactHex', 'node'],
             image: 'pim'
         },
         {
             title: "Samfundet",
-            link: "/",
+            link: "https://github.com/martinlunde/IT1901",
             lightDescription: "IT1901 - Informatikk Prosjektarbeid 1",
             description: "One of my earlier projects pursuing my masters degree, was to develop a system keeping track\n" +
             " of different tasks at 'Samfundet'. This system was built on the earlier AngularJS platform and the " +
@@ -69,7 +69,7 @@ list_of_projects = [
         },
         {
             title: "OnlineWeb",
-            link: "https://online.ntnu.no",
+            link: "https://github.com/dotkom/onlineweb4",
             lightDescription: "Online, Linjeforningen for informatikk",
             description: "As a student of Computer Science, i have also chosen to contribute to our\n" +
             " voluntary organization 'Online'. I am a part of the so called 'drifts- og utviklingskomiteen' where\n" +

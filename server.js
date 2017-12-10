@@ -29,8 +29,8 @@ app.use('/api', router);
 
 app.use(express.static(__dirname + '/build'));
 
-app.listen(8000, function () {
-    console.log('\nThe server is now running on port 8000...\n' +
+app.listen(8080, function () {
+    console.log('\nThe server is now running on port 8080...\n' +
         'Press ctrl + C to shutdown the server.\n')
 });
 
@@ -53,7 +53,6 @@ router.post('/project/new', (req, res) => {
             if (err) {
                 res.status(401).send(err.message);
             } else {
-                console.log("success");
                 res.status(200).json(docs);
             }
         }
@@ -65,7 +64,6 @@ router.get('/projects', (req, res) => {
         if (err) {
             res.status(401).send(err.message);
         } else {
-            console.log("success");
             res.status(200).json(projects);
         }
     })
