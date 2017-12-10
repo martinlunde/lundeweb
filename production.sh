@@ -6,6 +6,8 @@ echo Latest version is ${latesttag}
 git checkout tags/${latesttag}
 echo checked out tags/${latesttag}
 
+git pull origin tags/${latesttag}
+
 npm install
 npm run build
 
