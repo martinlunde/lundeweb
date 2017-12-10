@@ -53,7 +53,6 @@ router.post('/project/new', (req, res) => {
             if (err) {
                 res.status(401).send(err.message);
             } else {
-                console.log("success");
                 res.status(200).json(docs);
             }
         }
@@ -65,7 +64,6 @@ router.get('/projects', (req, res) => {
         if (err) {
             res.status(401).send(err.message);
         } else {
-            console.log("success");
             res.status(200).json(projects);
         }
     })
