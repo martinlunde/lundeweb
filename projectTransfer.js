@@ -34,7 +34,7 @@ list_of_projects = [
             "projects that i find suitable to put on display, and everything else i would like to experiment\n" +
             "with to further improve my knowledge.",
             assets: ['mongo', 'express', 'reactHex', 'node'],
-            image: 'lundeweb'
+            image: 'lundeweb',
         },
         {
             title: "BlockBuster",
@@ -44,7 +44,7 @@ list_of_projects = [
             "based on Angular. BlockBuster was my groups answer to this task, and is a website for looking up movies\n" +
             "in a database developed by using the mean stack and Material-UI",
             assets: ['mongo', 'express', 'angular', 'node'],
-            image: 'blockbuster'
+            image: 'blockbuster',
         },
         {
             title: "PIM",
@@ -55,7 +55,7 @@ list_of_projects = [
             "writing, and we had to develop a 'Personal Information Manager' with calendar, notes and todolists.\n This was" +
             " an easier introduction to React, but did also include a dive into React-Native.",
             assets: ['mongo', 'express', 'reactHex', 'node'],
-            image: 'pim'
+            image: 'pim',
         },
         {
             title: "Samfundet",
@@ -65,7 +65,7 @@ list_of_projects = [
             " of different tasks at 'Samfundet'. This system was built on the earlier AngularJS platform and the " +
             "NoSQL database Firebase.",
             assets: ['firebase', 'angular', 'node'],
-            image: 'samfundet'
+            image: 'samfundet',
         },
         {
             title: "OnlineWeb",
@@ -76,7 +76,7 @@ list_of_projects = [
             "we gather for weekly meetings throughout the semesters, to discuss the future of our platform OnlineWeb\n" +
             "and how it can be used to improve our day to day lives as students.",
             assets: ['django', 'reactHex', 'node', 'docker'],
-            image: 'onlineweb'
+            image: 'onlineweb',
         }
 ];
 

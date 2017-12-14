@@ -19,17 +19,30 @@ export class AboutProject extends React.Component {
                 this.setState({
                     project: data
                 });
+                this.generateChart(data.languages);
             });
         });
+    }
+
+    generateChart(languages) {
+        const languageList = {
+            names: [],
+            values: []
+        };
+        for(let key in languages) {
+            languageList.names.push(key);
+            languageList.values.push(languages[key]);
+        }
+        console.log(languageList);
 
         const ctx = document.getElementById("githubChart").getContext('2d');
         const githubChart = new Chart(ctx, {
             type: 'doughnut',
             data: {
-                labels: ["HTML", "CSS", "Javascript", "shell", "python", "markdown"],
+                labels: languageList.names,
                 datasets: [{
                     label: '# of Votes',
-                    data: [12, 19, 3, 5, 2, 3],
+                    data: languageList.values,
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',
                         'rgba(54, 162, 235, 0.2)',
@@ -53,14 +66,34 @@ export class AboutProject extends React.Component {
                 rotation: 1 * Math.PI,
                 circumference: 1 * Math.PI,
                 legend: {
-                    display: false
-                },
-                title: {
-                    display: true,
                     position: 'bottom',
-                    text: "PUT A TITLE HERE"
+                    labels: {
+                        padding: 10,
+
+                    }
                 },
             },
+        });
+
+        Chart.pluginService.register({
+            beforeDraw: function(chart) {
+                const width = chart.chart.width,
+                    height = chart.chart.height,
+                    ctx = chart.chart.ctx;
+
+                ctx.restore();
+                const fontSize = (height / 150).toFixed(2);
+                ctx.fillStyle = '#FFF';
+                ctx.font = fontSize + "em sans-serif";
+                ctx.textBaseline = "middle";
+
+                const text = "Composition",
+                    textX = Math.round((width - ctx.measureText(text).width) / 2),
+                    textY = height / 1.5;
+
+                ctx.fillText(text, textX, textY);
+                ctx.save();
+            }
         });
     }
 
