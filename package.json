@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "bluebird": "^3.5.1",
+    "chart.js": "^2.7.1",
     "express": "^4.16.2",
     "mongoose": "^4.13.0",
     "react": "^16.0.0",

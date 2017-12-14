@@ -48,10 +48,7 @@
 
 /* Single Project Display */
 .ProjectWrapper {
-    display: flex;
-    flex-wrap: wrap;
     margin-top: -20vw;
-    justify-content: center;
 }
 
 .CornerThumbnailContainer {
@@ -92,11 +89,10 @@
 }
 
 .ProjectContent{
-    position: absolute;
-    left: 6vw;
-    top: 20vh;
+    margin-top: 20vh;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .ProjectContentLeft{
@@ -104,6 +100,7 @@
     width: 40vw;
     display: flex;
     flex-direction: column;
+    min-width: 500px;
 }
 
 .ProjectContentLeft .ProjectTitle {
@@ -114,10 +111,17 @@
     display: flex;
     flex-direction: column;
     width: 40vw;
+    justify-content: center;
+    min-width: 500px;
+}
+
+.githubChartContainer {
+    margin-top: 50px;
 }
 
 .ProjectAssets img {
     height: 8vw;
+    min-height: 100px;
 }
 
 /* Footer */
