@@ -1,4 +1,4 @@
-const https = require('https');
+let fetch = require('node-fetch');
 
 const dataList = {
     blockbuster: 'https://api.github.com/repos/martinlunde/IT2810-Angular/languages',
@@ -11,13 +11,17 @@ const updatedLanguages = {};
 
 function updateLanguages() {
     for(let element in dataList){
-        https.get(dataList[element], res => {
-            res.on('data', (d) => {
-                process.stdout.write(d);
-            });
-        });
+        getData(dataList[element], element);
     }
 }
 
+function getData(url, element) {
+    fetch(url).then( result => {
+        result.json().then((data) => {
+            console.log(element);
+            console.log(data);
+        });
+    });
+}
+
 updateLanguages();
-console.log("\n\n" + updatedLanguages);

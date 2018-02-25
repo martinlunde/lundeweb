@@ -35,6 +35,7 @@ list_of_projects = [
             "with to further improve my knowledge.",
             assets: ['mongo', 'express', 'reactHex', 'node'],
             image: 'lundeweb',
+            languages: { JavaScript: 23188, CSS: 4340, HTML: 462, Shell: 246 }
         },
         {
             title: "BlockBuster",
@@ -45,6 +46,7 @@ list_of_projects = [
             "in a database developed by using the mean stack and Material-UI",
             assets: ['mongo', 'express', 'angular', 'node'],
             image: 'blockbuster',
+            languages: { TypeScript: 72222, JavaScript: 53116, CSS: 13242, HTML: 12493 }
         },
         {
             title: "PIM",
@@ -56,6 +58,7 @@ list_of_projects = [
             " an easier introduction to React, but did also include a dive into React-Native.",
             assets: ['mongo', 'express', 'reactHex', 'node'],
             image: 'pim',
+            languages: { JavaScript: 103638, CSS: 15381, HTML: 1286 }
         },
         {
             title: "Samfundet",
@@ -66,6 +69,7 @@ list_of_projects = [
             "NoSQL database Firebase.",
             assets: ['firebase', 'angular', 'node'],
             image: 'samfundet',
+            languages: { CSS: 102165, HTML: 47918, JavaScript: 31618 }
         },
         {
             title: "OnlineWeb",
@@ -77,6 +81,7 @@ list_of_projects = [
             "and how it can be used to improve our day to day lives as students.",
             assets: ['django', 'reactHex', 'node', 'docker'],
             image: 'onlineweb',
+            languages: { Python: 1089523, JavaScript: 770672, HTML: 460508, CSS: 69710, Makefile: 1604 }
         }
 ];
 
@@ -87,7 +92,8 @@ for(let key in list_of_projects){
         lightDescription: list_of_projects[key].lightDescription,
         description: list_of_projects[key].description,
         assets: list_of_projects[key].assets,
-        image: list_of_projects[key].image
+        image: list_of_projects[key].image,
+        languages: list_of_projects[key].languages
     });
     db.collection('projects').save(new_project,
         function(err, docs) {
