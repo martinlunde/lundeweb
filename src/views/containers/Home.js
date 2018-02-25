@@ -15,7 +15,6 @@ export class Home extends React.Component {
                         Welcome to my personal website! <br/>
                         The purpose of this project is to make a showcase of my
                         portfolio rather than linking directly to repositories of code.
-                        There will also, in the future, be an available CV and documentation.
                     </div>
                     <div className="LinkIcons">
                         <a href="https://github.com/martinlunde" className="GithubLogo">

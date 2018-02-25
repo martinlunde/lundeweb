@@ -36,7 +36,7 @@ export class AboutProject extends React.Component {
         console.log(languageList);
 
         const ctx = document.getElementById("githubChart").getContext('2d');
-        const githubChart = new Chart(ctx, {
+        new Chart(ctx, {
             type: 'doughnut',
             data: {
                 labels: languageList.names,

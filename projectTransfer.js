@@ -82,6 +82,19 @@ list_of_projects = [
             assets: ['django', 'reactHex', 'node', 'docker'],
             image: 'onlineweb',
             languages: { Python: 1089523, JavaScript: 770672, HTML: 460508, CSS: 69710, Makefile: 1604 }
+        },
+        {
+            title: "RealBack",
+            link: "https://github.com/martinlunde/RealBack",
+            lightDescription: "Realtime Feedback Lecturer Application",
+            description: "As a part of the subject TDT4140, we were assigned the task to create some kind of software" +
+            "system to improve a regular day at school. My teams answer to this task, was the 'Realtime Feedback' system," +
+            "making it easier to communicate with the lecturer in huge lectures. The system, which is built with django, " +
+            "allows users to connect to a lecture-session using a random string, so that it is possible to write questions and " +
+            "give feedback to the lecturer anonymously.",
+            assets: ['django'],
+            image: 'realback',
+            languages: { Python: 82432, JavaScript: 55462, HTML: 35985, CSS: 16631 },
         }
 ];
 

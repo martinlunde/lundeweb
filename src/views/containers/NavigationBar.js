@@ -28,8 +28,6 @@ class NavigationBar extends React.Component {
         const LinkButtons = {
             Home: {title: 'Home', url: '/', active: 'Home'},
             Projects: {title: 'Projects', url: '/projects'},
-            About: {title: 'About', url: '/about'},
-            CV: {title: 'CV', url: '/cv'}
         };
 
         for (let key in LinkButtons) {
